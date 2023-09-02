@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block title %}
+{{ super() }} - {{ title }}
+{% endblock %}
+
+{% block content %}
+<div class="content">
+    <h2 class="container">Гиря</h2>
+    <div class="container">
+        <div>
+            <a href="{{ url_for('weights') }}"><img class="img"
+                                                  src="{{ url_for('static', filename='weight.png') }} " width=400px height=300px
+                                                  alt="weights"></a>
+        </div>
+
+    </div>
+</div>
+{% endblock %}
